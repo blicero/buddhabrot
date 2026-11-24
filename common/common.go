@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 01. 02. 2023 by Benjamin Walkenhorst
 // (c) 2023 Benjamin Walkenhorst
-// Time-stamp: <2023-02-01 15:10:40 krylon>
+// Time-stamp: <2026-11-24 12:02:33 krylon>
 
 package common
 
@@ -32,8 +32,8 @@ import (
 // TimestampFormat is the default format for timestamp used throughout the
 // application.
 const (
-	AppName                  = "Blockbuster"
-	Version                  = "0.1.0"
+	AppName                  = "Buddhabrot"
+	Version                  = "0.0.1"
 	Debug                    = true
 	TimestampFormatMinute    = "2006-01-02 15:04"
 	TimestampFormat          = "2006-01-02 15:04:05"
