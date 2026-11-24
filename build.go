@@ -2,8 +2,9 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 01. 02. 2021 by Benjamin Walkenhorst
 // (c) 2021 Benjamin Walkenhorst
-// Time-stamp: <2023-02-01 15:12:43 krylon>
+// Time-stamp: <2026-11-24 13:16:44 krylon>
 
+//go:build ignore
 // +build ignore
 
 package main
@@ -224,7 +225,7 @@ This flag is not case-sensitive.`, strings.Join(orderedSteps, ", ")))
 	if steps["build"] {
 		var output []byte
 
-		dbg.Println("[INFO] Building guang\n")
+		dbg.Println("[INFO] Building buddhabrot\n")
 
 		// Put aside a possibly existing binary
 		if err = backupExecutable(); err != nil {
@@ -350,7 +351,7 @@ func worker(n int, op string, pkgq <-chan string, errq chan<- error, wg *sync.Wa
 	defer wg.Done()
 
 	for folder := range pkgq {
-		pkg = "github.com/blicero/guang/" + folder
+		pkg = "github.com/blicero/buddhabrot/" + folder
 		dbg.Printf("[TRACE] Worker %d call %s on %s\n",
 			n,
 			op,
@@ -437,7 +438,7 @@ func initLog(min string) error {
 		writer io.Writer
 		// Trailing space because Logger does not seem to insert one
 		// between fields of the line.
-		logName = "guang.build "
+		logName = "buddhabrot.build "
 	)
 
 	if fh, err = os.OpenFile(logFile, os.O_RDWR|os.O_APPEND|os.O_CREATE, 0644); err != nil {
@@ -460,8 +461,8 @@ func initLog(min string) error {
 
 func backupExecutable() error {
 	const (
-		execPath   = "guang"
-		backupPath = "bak.guang"
+		execPath   = "buddhabrot"
+		backupPath = "bak.buddhabrot"
 	)
 	var (
 		exists bool

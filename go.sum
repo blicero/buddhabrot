@@ -1,5 +1,3 @@
-github.com/blicero/guang v0.0.0-20250606172603-c42e6bf2ae2c h1:UQ9ZrYrLv/BIUbyW9lPRWvtV8jE0yvYOPxrUBxERS5I=
-github.com/blicero/guang v0.0.0-20250606172603-c42e6bf2ae2c/go.mod h1:cp2vi6wEgAO92ydQfDK2UGuKQAJCfX5knzF3IP56pD8=
 github.com/blicero/krylib v0.4.1 h1:oPnfPXVTouwgGS6PQ4CuuDsZQiA3qYoyMS6wa33uUQo=
 github.com/blicero/krylib v0.4.1/go.mod h1:XyMLiBVmI64BHUvAFQFXP9GoHQaXCNgQCmfuoo7gMos=
 github.com/hashicorp/logutils v1.0.0 h1:dLEQVugN8vlakKOUE3ihGLTZJRB4j+M2cdTm/ORI65Y=
