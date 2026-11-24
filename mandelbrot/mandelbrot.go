@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 24. 11. 2026 by Benjamin Walkenhorst
 // (c) 2026 Benjamin Walkenhorst
-// Time-stamp: <2026-11-24 12:23:27 krylon>
+// Time-stamp: <2026-11-24 12:41:52 krylon>
 
 package mandelbrot
 
@@ -20,7 +20,10 @@ type RenderSpec struct {
 	MaxIter    uint32
 }
 
-func (r *RenderSpec) calcMandelbrot(n complex128) int {
+// CalcMandelbrot calculates if a number n is part of the Mandelbrot set.
+// If it is, the function returns 0. If not, it returns a positive integer
+// to show how much <n> is not a part of the set.
+func (r *RenderSpec) CalcMandelbrot(n complex128) int {
 	var p = n
 
 	for i := 0; i < int(r.MaxIter); i++ {
