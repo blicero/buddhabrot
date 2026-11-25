@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 01. 02. 2021 by Benjamin Walkenhorst
 // (c) 2021 Benjamin Walkenhorst
-// Time-stamp: <2026-11-24 13:16:44 krylon>
+// Time-stamp: <2026-11-25 10:21:56 krylon>
 
 //go:build ignore
 // +build ignore
@@ -62,16 +62,27 @@ var candidates = map[string][]string{
 	"generate": []string{
 		"logdomain",
 		"common",
+		"mandelbrot",
 	},
-	"test": []string{},
 	"vet": []string{
 		"common",
 		"logdomain",
+		"mandelbrot",
+		"render",
 	},
 	"lint": []string{
 		"common",
 		"logdomain",
+		"mandelbrot",
+		"render",
 	},
+	"nilaway": []string{
+		"common",
+		"logdomain",
+		"mandelbrot",
+		"render",
+	},
+	"test": []string{},
 }
 
 // During the clean step, all files and folders that match any of these
