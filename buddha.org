@@ -1,5 +1,5 @@
 # -*- mode: org; fill-column: 78; -*-
-# Time-stamp: <2026-11-24 12:09:10 krylon>
+# Time-stamp: <2026-11-25 15:15:44 krylon>
 #
 #+TAGS: internals(i) ui(u) bug(b) feature(f)
 #+TAGS: database(d) design(e), meditation(m)
@@ -14,6 +14,16 @@
   :VISIBILITY: all
   :END:
 ** Clocktable
+   #+BEGIN: clocktable :scope file :maxlevel 255 :emphasize t
+   #+CAPTION: Clock summary at [2026-11-25 Mi 15:15]
+   | Headline                          | Time   |        |      |
+   |-----------------------------------+--------+--------+------|
+   | *Total time*                      | *3:50* |        |      |
+   |-----------------------------------+--------+--------+------|
+   | *Buddhabrot [0/0]*                | *3:50* |        |      |
+   | \_  /Components [0/1]/            |        | /3:50/ |      |
+   | \_    Phase 1 - Render Mandelbrot |        |        | 3:50 |
+   #+END:
 ** Journal
 *** Dienstag, 24. 11. 2026
     First, I build the scaffolding, so to speak.
@@ -24,7 +34,8 @@
    :END:
 *** TODO Phase 1 - Render Mandelbrot
     :LOGBOOK:
-    CLOCK: [2026-11-24 Di 12:08]
+    CLOCK: [2026-11-25 Mi 10:13]--[2026-11-25 Mi 11:15] =>  1:02
+    CLOCK: [2026-11-24 Di 12:08]--[2026-11-24 Di 14:56] =>  2:48
     :END:
 ** Bugs [0/0]
    :PROPERTIES:
