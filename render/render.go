@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 24. 11. 2026 by Benjamin Walkenhorst
 // (c) 2026 Benjamin Walkenhorst
-// Time-stamp: <2026-11-25 15:15:18 krylon>
+// Time-stamp: <2026-11-27 13:08:41 krylon>
 
 package render
 
@@ -14,6 +14,8 @@ import (
 	"github.com/blicero/buddhabrot/logdomain"
 	"github.com/blicero/buddhabrot/mandelbrot"
 )
+
+type imageSlice [][]mandelbrot.Pixel
 
 // RenderMan handles the accounting side of the job, so to speak,
 // distributing the work across available workers.
@@ -58,6 +60,10 @@ func (rm *RenderMan) Initialize() {
 	var (
 		slice  = rm.yrange / float64(rm.parCnt)
 		offset = rm.spec.Ymin
+		resQ   = make(chan imageSlice, 0)
 	)
 
+	for i := 0; i < rm.parCnt; i++ {
+
+	}
 } // func (rm *RenderMan) Initialize()

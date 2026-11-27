@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 24. 11. 2026 by Benjamin Walkenhorst
 // (c) 2026 Benjamin Walkenhorst
-// Time-stamp: <2026-11-25 10:43:52 krylon>
+// Time-stamp: <2026-11-27 11:46:13 krylon>
 
 package mandelbrot
 
@@ -13,6 +13,7 @@ const maxAbs = 4.0
 // Pixel defines a point in the complex plane, and its Mandelbrot number.
 type Pixel struct {
 	Pt  complex128
+	Loc [2]uint32
 	Val int
 }
 
