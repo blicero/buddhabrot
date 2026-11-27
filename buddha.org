@@ -1,5 +1,5 @@
 # -*- mode: org; fill-column: 78; -*-
-# Time-stamp: <2026-11-25 15:15:44 krylon>
+# Time-stamp: <2026-11-27 13:08:37 krylon>
 #
 #+TAGS: internals(i) ui(u) bug(b) feature(f)
 #+TAGS: database(d) design(e), meditation(m)
@@ -15,14 +15,14 @@
   :END:
 ** Clocktable
    #+BEGIN: clocktable :scope file :maxlevel 255 :emphasize t
-   #+CAPTION: Clock summary at [2026-11-25 Mi 15:15]
+   #+CAPTION: Clock summary at [2026-11-27 Fr 13:08]
    | Headline                          | Time   |        |      |
    |-----------------------------------+--------+--------+------|
-   | *Total time*                      | *3:50* |        |      |
+   | *Total time*                      | *7:23* |        |      |
    |-----------------------------------+--------+--------+------|
-   | *Buddhabrot [0/0]*                | *3:50* |        |      |
-   | \_  /Components [0/1]/            |        | /3:50/ |      |
-   | \_    Phase 1 - Render Mandelbrot |        |        | 3:50 |
+   | *Buddhabrot [0/0]*                | *7:23* |        |      |
+   | \_  /Components [0/1]/            |        | /7:23/ |      |
+   | \_    Phase 1 - Render Mandelbrot |        |        | 7:23 |
    #+END:
 ** Journal
 *** Dienstag, 24. 11. 2026
@@ -34,6 +34,8 @@
    :END:
 *** TODO Phase 1 - Render Mandelbrot
     :LOGBOOK:
+    CLOCK: [2026-11-27 Fr 11:30]--[2026-11-27 Fr 13:08] =>  1:38
+    CLOCK: [2026-11-26 Do 14:29]--[2026-11-26 Do 16:24] =>  1:55
     CLOCK: [2026-11-25 Mi 10:13]--[2026-11-25 Mi 11:15] =>  1:02
     CLOCK: [2026-11-24 Di 12:08]--[2026-11-24 Di 14:56] =>  2:48
     :END:
